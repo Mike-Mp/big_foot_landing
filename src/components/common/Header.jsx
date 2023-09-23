@@ -31,21 +31,15 @@ const menus = [
 export default function Header() {
   return (
     <header className="border-b border-[#d0d3d4] pb-4">
-      <div className="max-w-[1140px] mx-auto">
-        <Link href="/">
-          <h3 className="text-[30px] text-center uppercase">Big<span className="text-red-600">Foot</span></h3>
+      <div className="max-w-[1140px] mx-auto pt-2 flex flex-col items-center ">
+        <Link href="/" className="inline text-[30px] text-center uppercase hover:opacity-70">
+          Big<span className="text-red-600">Foot</span>
         </Link>
 
         <div className="flex gap-5 justify-center">
           {menus.map(m => (
             <HeaderLink title={m.title} href={m.href} />
           ))}
-          {/* <Link href="/new">New & Now</Link> */}
-          {/* <Link href="/shoes?type=women">Women</Link> */}
-          {/* <Link href="/shoes?type=men">Men</Link> */}
-          {/* <Link href="/shoes?type=kids">Kids</Link> */}
-          {/* <Link href="/brands">Brands</Link> */}
-          {/* <Link href="/accessories">Accessories</Link> */}
         </div>
       </div>
     </header>
