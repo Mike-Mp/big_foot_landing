@@ -6,6 +6,7 @@ const rob = Roboto_Condensed({ subsets: ['latin'], weight: "400" });
 const rob_b = Roboto_Condensed({ subsets: ['latin'], weight: "700" });
 
 import Header from '@/components/common/Header';
+import { AOSInit } from '@/components/common/AOSInit';
 
 export default function RootLayout({ children }) {
   return (
@@ -15,7 +16,8 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={rob_b.className}>
+      <AOSInit />
+      <body className={rob.className}>
 
         <Header />
 
