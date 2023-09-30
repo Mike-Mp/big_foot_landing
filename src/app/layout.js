@@ -7,6 +7,7 @@ const rob_b = Roboto_Condensed({ subsets: ['latin'], weight: "700" });
 
 import Header from '@/components/common/Header';
 import { AOSInit } from '@/components/common/AOSInit';
+import Footer from '@/components/common/Footer';
 
 export default function RootLayout({ children }) {
   return (
@@ -23,9 +24,8 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <footer className="">
+        <Footer />
 
-        </footer>
       </body>
     </html>
   )
